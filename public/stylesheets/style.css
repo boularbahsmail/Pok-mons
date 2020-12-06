@@ -187,6 +187,9 @@ ul li {
   .pokemon {
     width: 60%;
   }
+  .pokemon .img-container img {
+    width: 250px;
+  }
 }
 /* 800px */
 @media only screen and (max-width: 800px) {
@@ -198,6 +201,12 @@ ul li {
 @media only screen and (max-width: 700px) {
   .pokemon {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pokemon .img-container img {
+    width: 220px;
   }
 }
 
