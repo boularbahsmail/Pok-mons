@@ -4,7 +4,7 @@ const nextButton = document.querySelector('.next-pokemons-list');
 const img_container = Array.from(document.querySelectorAll('.img-container'));
 // Pokémons number that will be fetched
 var pokemons_number = 196;
-// Pokémons colors
+// Pokémons types colors
 const colors = {
 	fire: 'rgb(234, 32, 39)',
 	grass: 'rgb(68, 189, 50)',
@@ -41,11 +41,13 @@ const getPokemon = async (id) => {
     // console.log(pokemon);
 	BuildPokemonCardComponent(pokemon);
 };
+
 // Build pokémon card component
 const BuildPokemonCardComponent = (pokemon) => {
 	const pokemonEl = document.createElement('div');
-	pokemonEl.classList.add('pokemon');
-    // Info
+    pokemonEl.classList.add('pokemon');
+    
+    // Pokémon information
     const poke_types = pokemon.types.map(type => type.type.name);
 	const type = main_types.find(type => poke_types.indexOf(type) > -1);
     const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
