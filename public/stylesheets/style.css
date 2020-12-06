@@ -46,7 +46,7 @@ h5 {
 
 .pokemon {
 	background-color: rgb(255, 255, 255);
-	border-radius: 20px;
+	border-radius: 10px;
 	/* box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); */
 	margin: 10px;
   padding: 0px 0px;
@@ -65,8 +65,8 @@ h5 {
 
 .pokemon .img-container {
 	background-color: rgba(248, 248, 248, 0.501);
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   width: 100%;
 	height: 220px;
 	text-align: center;
@@ -200,7 +200,7 @@ ul li {
 /* 700px */
 @media only screen and (max-width: 700px) {
   .pokemon {
-    width: 90%;
+    width: 95%;
   }
 }
 
